@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://tapestry.apache.org">
+<head>
+    <title>Spittles</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Recent Spittles</h1>
+<li th:each="spittle, spittleStat : ${spittleList}">
+    <div class="spittleMessage" th:text="${spittle.message}"></div>
+    <div>
+        <span class="spittleTime" th:text="${spittle.time}"></span>
+        <span class="spittleLocation" th:text="'(' + ${spittle.latituda} + '&nbsp;' + ${spittle.longituda} + ')'">
+            </span>
+    </div>
+</li>
+
+</body>
+</html>
