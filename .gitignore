@@ -1,0 +1,13 @@
+# Java class files
+*.class
+
+# Build files
+target/
+
+# IDEA Configuration files
+.idea/
+
+# Eclipse Configuration files
+.classpath
+.project
+.settings/
