@@ -6,6 +6,7 @@ target/
 
 # IDEA Configuration files
 .idea/
+*.iml
 
 # Eclipse Configuration files
 .classpath
